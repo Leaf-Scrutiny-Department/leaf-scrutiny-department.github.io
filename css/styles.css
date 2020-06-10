@@ -10016,21 +10016,13 @@ p {
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 767px min-width: 500px) {
+@media (max-width: 767px) {
   .page-section h2.section-heading {
     font-size: 1.6rem;
     margin-top: 0;
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 499px) {
-  .page-section h2.section-heading {
-    font-size: 1rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-}
-
 .page-section h3.section-subheading {
   font-size: 1rem;
   font-weight: 400;
