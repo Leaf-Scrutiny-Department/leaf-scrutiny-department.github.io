@@ -46,29 +46,43 @@
             <label for="myfile">Select files:</label>
             <input type="file" id="myfile" name="myfile" multiple class="btn btn-primary btn-xl js-scroll-trigger"><br><br>
             <input type="upload" class="btn btn-primary btn-xl js-scroll-trigger">
-            <h2 class="result">
-              <table id="t01">
-                <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Age</th>
-                </tr>
-                <tr>
-                  <td>Jill</td>
-                  <td>Smith</td>
-                  <td>50</td>
-                </tr>
-                <tr>
-                  <td>Eve</td>
-                  <td>Jackson</td>
-                  <td>94</td>
-                </tr>
-                <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
-              </table>
+            <style>          
+              table {
+                width:100%;
+              }
+              table, th, td {
+                border: 0px;
+                border-collapse: collapse;
+              }
+              th, td {
+                padding: 15px;
+                text-align: center;
+              }
+              table#t01 tr:nth-child(even) {
+                background-color: #eee;
+              }
+              table#t01 tr:nth-child(odd) {
+               background-color: #fff;
+              }
+              table#t01 th {
+                background-color: #309b00;
+                color: white;
+              }
+            </style>
+              <script>
+                var mytable = "<table id="t01"><tbody><tr>";
+                mytable+= "<th>Name of file</th><th>Class of given leaf picture</th>"
+                for (var i = 0; i < n; i++) {
+                  mytable += "</tr><tr>";
+                  mytable += "<td>[" + "Name of file no." + i + "]</td>";
+                  mytable += "<td>[" + "Result of file no." + i + "]</td>";
+                }
+
+                mytable += "</tr></tbody></table>";
+
+                document.write(mytable);
+
+              </script>
           </form>
         </div>
       </section>
