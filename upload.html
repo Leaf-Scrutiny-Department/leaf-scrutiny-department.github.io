@@ -46,7 +46,7 @@
             <label for="myfile">Select files:</label>
             <input type="file" id="myfile" name="myfile" multiple class="btn btn-primary btn-xl js-scroll-trigger"><br><br>
             <input type="upload" class="btn btn-primary btn-xl js-scroll-trigger">
-            <style>          
+            <style>
               table {
                 width:100%;
               }
@@ -70,8 +70,9 @@
               }
             </style>
               <script>
+                var n = 20;
                 var mytable = "<table id="t01"><tbody><tr>";
-                mytable+= "<th>Name of file</th><th>Class of given leaf picture</th>"
+                mytable += "<th>Name of file</th><th>Class of given leaf picture</th>"
                 for (var i = 0; i < n; i++) {
                   mytable += "</tr><tr>";
                   mytable += "<td>[" + "Name of file no." + i + "]</td>";
